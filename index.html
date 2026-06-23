@@ -1,63 +1,139 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>My Portfolio</title>
+    <title>Haadia Farrukh</title>
 
-  <style>
-    body {
-      font-family: Arial, sans-serif;
-      margin: 0;
-      padding: 0;
-      background-color: #f4f6f8;
-      color: #222;
-      text-align: center;
-    }
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background: #111827;
+            color: white;
+        }
 
-    h1 {
-      margin-top: 80px;
-      font-size: 40px;
-    }
+        nav {
+            background: #1f2937;
+            padding: 20px;
+            text-align: center;
+        }
 
-    p {
-      font-size: 18px;
-      color: #555;
-    }
-  </style>
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 20px;
+        }
+
+        .hero {
+            text-align: center;
+            padding: 100px 20px;
+        }
+
+        .hero h1 {
+            font-size: 48px;
+            margin-bottom: 10px;
+        }
+
+        .hero h2 {
+            color: #60a5fa;
+            font-weight: normal;
+        }
+
+        section {
+            max-width: 900px;
+            margin: auto;
+            padding: 40px 20px;
+        }
+
+        .project {
+            background: #1f2937;
+            padding: 20px;
+            border-radius: 10px;
+            margin-bottom: 20px;
+        }
+
+        .skills span {
+            background: #2563eb;
+            padding: 8px 15px;
+            border-radius: 20px;
+            display: inline-block;
+            margin: 5px;
+        }
+
+        footer {
+            text-align: center;
+            padding: 30px;
+            color: #9ca3af;
+        }
+    </style>
 </head>
 
 <body>
-  <h1>Haadia Farrukh</h1>
-  <p>Embedded Controls Engineer</p>
-</body>
-</html><!DOCTYPE html>
-<html>
-<head>
-  <title>My Portfolio</title>
 
-  <style>
-    body {
-      font-family: Arial, sans-serif;
-      margin: 0;
-      padding: 0;
-      background-color: #f4f6f8;
-      color: #222;
-      text-align: center;
-    }
+<nav>
+    <a href="#about">About</a>
+    <a href="#projects">Projects</a>
+    <a href="#skills">Skills</a>
+</nav>
 
-    h1 {
-      margin-top: 80px;
-      font-size: 40px;
-    }
+<div class="hero">
+    <h1>Haadia Farrukh</h1>
+    <h2>Embedded Controls Engineer</h2>
+    <p>
+        Control Systems • Power Electronics • Embedded Firmware
+    </p>
+</div>
 
-    p {
-      font-size: 18px;
-      color: #555;
-    }
-  </style>
-</head>
+<section id="about">
+    <h2>About Me</h2>
+    <p>
+        Embedded and control systems engineer working on hybrid solar
+        inverters, battery management systems, DSP firmware, and
+        renewable energy applications.
+    </p>
+</section>
 
-<body>
-  <h1>Haadia Farrukh</h1>
-  <p>Embedded Controls Engineer</p>
+<section id="projects">
+    <h2>Projects</h2>
+
+    <div class="project">
+        <h3>Hybrid Solar Inverter Control</h3>
+        <p>
+            Developed control algorithms for PV, battery, and grid operation.
+        </p>
+    </div>
+
+    <div class="project">
+        <h3>Battery Management System</h3>
+        <p>
+            Designed charging and discharging control strategies.
+        </p>
+    </div>
+
+    <div class="project">
+        <h3>OTA Update System</h3>
+        <p>
+            Developed firmware update mechanisms for DSP-based systems.
+        </p>
+    </div>
+</section>
+
+<section id="skills">
+    <h2>Skills</h2>
+
+    <div class="skills">
+        <span>C</span>
+        <span>C++</span>
+        <span>MATLAB</span>
+        <span>TI C2000</span>
+        <span>DSP</span>
+        <span>Control Systems</span>
+        <span>Power Electronics</span>
+    </div>
+</section>
+
+<footer>
+    Haadia Farrukh • Embedded Controls Engineer
+</footer>
+
 </body>
 </html>
