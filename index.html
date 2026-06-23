@@ -4,65 +4,115 @@
     <title>Haadia Farrukh</title>
 
     <style>
+        :root {
+            --bg: #59594A;
+            --card: #7286A0;
+            --accent: #BE6E46;
+            --soft: #A3BFA8;
+            --light: #CDE7B0;
+            --text: #F5F5F5;
+        }
+
         body {
             margin: 0;
-            font-family: Arial, sans-serif;
-            background: #111827;
-            color: white;
+            font-family: "Times New Roman", Times, serif;
+            background: var(--bg);
+            color: var(--text);
         }
 
         nav {
-            background: #1f2937;
-            padding: 20px;
+            background: var(--card);
+            padding: 18px;
             text-align: center;
+            position: sticky;
+            top: 0;
         }
 
         nav a {
-            color: white;
+            color: var(--text);
             text-decoration: none;
-            margin: 20px;
+            margin: 0 15px;
+            font-weight: 500;
+        }
+
+        nav a:hover {
+            color: var(--light);
         }
 
         .hero {
             text-align: center;
-            padding: 100px 20px;
+            padding: 90px 20px;
         }
 
         .hero h1 {
-            font-size: 48px;
-            margin-bottom: 10px;
+            font-size: 52px;
+            margin: 0;
         }
 
         .hero h2 {
-            color: #60a5fa;
+            color: var(--light);
             font-weight: normal;
+            margin-top: 10px;
+        }
+
+        .hero p {
+            max-width: 600px;
+            margin: 20px auto;
+            color: var(--soft);
+        }
+
+        .button {
+            display: inline-block;
+            margin-top: 15px;
+            padding: 10px 20px;
+            background: var(--accent);
+            color: white;
+            text-decoration: none;
+            border-radius: 8px;
         }
 
         section {
             max-width: 900px;
             margin: auto;
-            padding: 40px 20px;
+            padding: 50px 20px;
         }
 
-        .project {
-            background: #1f2937;
-            padding: 20px;
-            border-radius: 10px;
+        h2 {
+            color: var(--light);
             margin-bottom: 20px;
         }
 
+        .card {
+            background: var(--card);
+            padding: 20px;
+            border-radius: 12px;
+            margin-bottom: 20px;
+        }
+
+        .card h3 {
+            margin-top: 0;
+            color: white;
+        }
+
+        .card p {
+            color: #e9eef5;
+        }
+
         .skills span {
-            background: #2563eb;
-            padding: 8px 15px;
-            border-radius: 20px;
             display: inline-block;
+            background: var(--accent);
+            color: white;
+            padding: 8px 14px;
+            border-radius: 20px;
             margin: 5px;
+            font-size: 14px;
         }
 
         footer {
             text-align: center;
             padding: 30px;
-            color: #9ca3af;
+            color: var(--soft);
+            font-size: 14px;
         }
     </style>
 </head>
@@ -73,66 +123,71 @@
     <a href="#about">About</a>
     <a href="#projects">Projects</a>
     <a href="#skills">Skills</a>
+    <a href="#contact">Contact</a>
 </nav>
 
 <div class="hero">
     <h1>Haadia Farrukh</h1>
     <h2>Embedded Controls Engineer</h2>
     <p>
-        Control Systems • Power Electronics • Embedded Firmware
+        Control Systems • Power Electronics • DSP Firmware • Renewable Energy Systems
     </p>
+
+    <a class="button" href="resume.pdf">Download Resume</a>
 </div>
 
 <section id="about">
-    <h2>About Me</h2>
-    <p>
-        Embedded and control systems engineer working on hybrid solar
-        inverters, battery management systems, DSP firmware, and
-        renewable energy applications.
-    </p>
+    <h2>About</h2>
+    <div class="card">
+        <p>
+            Embedded controls engineer working on hybrid solar inverters,
+            battery management systems, and DSP-based power electronics.
+            Focused on real-time control, optimization, and embedded firmware
+            development.
+        </p>
+    </div>
 </section>
 
 <section id="projects">
     <h2>Projects</h2>
 
-    <div class="project">
+    <div class="card">
         <h3>Hybrid Solar Inverter Control</h3>
-        <p>
-            Developed control algorithms for PV, battery, and grid operation.
-        </p>
+        <p>Designed control loops for PV + battery + grid interaction.</p>
     </div>
 
-    <div class="project">
-        <h3>Battery Management System</h3>
-        <p>
-            Designed charging and discharging control strategies.
-        </p>
-    </div>
-
-    <div class="project">
-        <h3>OTA Update System</h3>
-        <p>
-            Developed firmware update mechanisms for DSP-based systems.
-        </p>
-    </div>
 </section>
 
 <section id="skills">
     <h2>Skills</h2>
 
-    <div class="skills">
-        <span>C</span>
-        <span>C++</span>
-        <span>MATLAB</span>
-        <span>TI C2000</span>
-        <span>DSP</span>
-        <span>Control Systems</span>
-        <span>Power Electronics</span>
+    <div class="card">
+        <div class="skills">
+            <span>C</span>
+            <span>C++</span>
+            <span>MATLAB</span>
+            <span>Simulink</span>
+            <span>TI C2000</span>
+            <span>DSP</span>
+            <span>Control Systems</span>
+            <span>Power Electronics</span>
+            <span>Embedded Systems</span>
+        </div>
+    </div>
+</section>
+
+<section id="contact">
+    <h2>Contact</h2>
+
+    <div class="card">
+        <p>Email: haadia.farrukh.work@gmail.com</p>
+        <p>GitHub: github.com/h-farrukh</p>
+        <p>LinkedIn: linkedin.com/in/h-farrukh/</p>
     </div>
 </section>
 
 <footer>
-    Haadia Farrukh • Embedded Controls Engineer
+    © 2026 Haadia Farrukh — Embedded Controls Engineer
 </footer>
 
 </body>
